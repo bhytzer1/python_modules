@@ -3,10 +3,19 @@ class Plant:
     def __init__(self, name: str, height: int, age: int):
         self.name = name
         self.height = height
-        self.age = age
+        self.age_days = age
+
+    def grow(self, amount: float) -> None:
+        self.height += amount
+
+    def age(self, days: int) -> None:
+        self.age_days += days
+
+    def __str__(self) -> str:
+        return f"{self.name}: {self.height:.2f}cm, {self.age_days} days old"
 
     def show(self):
-        print(f"{self.name}: {self.height}cm, {self.age} days old")
+        print(f"{self.name}: {self.height:.2f}cm, {self.age_days} days old")
 
 
 if __name__ == "__main__":
