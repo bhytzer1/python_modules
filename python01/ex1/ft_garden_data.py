@@ -12,10 +12,10 @@ class Plant:
         self.age_days += days
 
     def __str__(self) -> str:
-        return f"{self.name}: {self.height:.2f}cm, {self.age_days} days old"
+        return f"{self.name}: {self.height:.1f}cm, {self.age_days} days old"
 
     def show(self):
-        print(f"{self.name}: {self.height:.2f}cm, {self.age_days} days old")
+        print(f"{self.name}: {self.height:.1f}cm, {self.age_days} days old")
 
 
 if __name__ == "__main__":

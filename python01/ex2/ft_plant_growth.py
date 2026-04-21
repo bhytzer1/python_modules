@@ -10,7 +10,7 @@ except ModuleNotFoundError:
 
 
 if __name__ == "__main__":
-    print(f"=== Garden Plant Growth ===")
+    print("=== Garden Plant Growth ===")
     rose = Plant("Rose", 25.0, 30)
     rose.show()
     starting_height = rose.height
@@ -22,7 +22,3 @@ if __name__ == "__main__":
         rose.show()
     total = rose.height - starting_height
     print(f"Growth this week: {round(total, 1)}cm")
-
-
-
-

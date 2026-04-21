@@ -29,10 +29,11 @@ class Plant:
         print(f"{self.name}: {self._height}cm, {self._age} days old")
         pass
 
+
 if __name__ == "__main__":
     print("=== Garden Security System ===")
     rose = Plant("Rose", 15.0, 10)
-    print(f"Plant created: ", end="")
+    print("Plant created: ", end="")
     rose.show()
 
     rose.set_height(25)
