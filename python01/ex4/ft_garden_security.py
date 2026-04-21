@@ -26,7 +26,7 @@ class Plant:
         return self._age
 
     def show(self) -> None:
-        print(f"{self.name}: {self._height}cm, {self._age}days old")
+        print(f"{self.name}: {self._height}cm, {self._age} days old")
         pass
 
 if __name__ == "__main__":
