@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from typing import cast
 
 
 class Plant:
@@ -18,7 +19,7 @@ class Plant:
                 f"{self._age_calls} age, {self._show_calls} show"
             )
 
-    def __init__(self, name: str, height: int, age: int):
+    def __init__(self, name: str, height: float, age: int):
         self.name = name
         self.height = height
         self.age_days = age
@@ -94,7 +95,7 @@ class Tree(Plant):
             f"Tree {self.name} now produces a shade of "
             f"{self.height}cm long and {self.trunk_diameter}cm wide."
         )
-        self.stats.record_shade()
+        cast(Tree.TreeStats, self.stats).record_shade()
 
     def show(self) -> None:
         super().show()

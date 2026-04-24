@@ -56,7 +56,7 @@ class Vegetable(Plant):
         self.nutritional_value = 0
 
     def grow(self, amount: float) -> None:
-        super().grow(amount)
+        super().grow(int(amount))
 
     def age(self, days: int) -> None:
         super().age(days)
@@ -91,6 +91,6 @@ if __name__ == "__main__":
     tomato.show()
 
     print("[make tomato grow and age for 20 days]")
-    tomato.grow(42.0)
+    tomato.grow(42)
     tomato.age(20)
     tomato.show()

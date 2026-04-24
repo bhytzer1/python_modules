@@ -18,7 +18,7 @@ if __name__ == "__main__":
     for temp in range(1, 7 + 1):
         print(f"=== Day {temp} ===")
         rose.age(1)
-        rose.grow(0.8)
+        rose.grow(1)
         rose.show()
     total = rose.height - starting_height
     print(f"Growth this week: {round(total, 1)}cm")
