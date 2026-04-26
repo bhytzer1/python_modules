@@ -27,12 +27,12 @@ def test_custom_errors() -> None:
     print("\nTesting catching all garden errors...")
     try:
         raise PlantError()
-    except PlantError as e:
-        print(f"Caught PlantError: {e}")
+    except GardenError as e:
+        print(f"Caught GardenError: {e}")
     try:
         raise WaterError()
-    except WaterError as e:
-        print(f"Caught WaterError: {e}")
+    except GardenError as e:
+        print(f"Caught GardenError: {e}")
 
     print("\nAll custom error types work correctly!")
 

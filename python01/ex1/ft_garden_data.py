@@ -5,7 +5,7 @@ class Plant:
         self.height = height
         self.age_days = age
 
-    def grow(self, amount: int) -> None:
+    def grow(self, amount: float) -> None:
         self.height += amount
 
     def age(self, days: int) -> None:
