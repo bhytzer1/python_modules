@@ -9,6 +9,7 @@ def garden_operations(operation_number: int) -> None:
     elif operation_number == 3:
         "x" + 42
 
+
 def test_error_types() -> None:
     for i in range(5):
         print(f"Testing operation {i}...")
@@ -29,4 +30,3 @@ def test_error_types() -> None:
 if __name__ == "__main__":
     print("=== Garden Error Types Demo ===")
     test_error_types()
-
